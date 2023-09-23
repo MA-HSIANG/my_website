@@ -57,7 +57,7 @@ function table() {
 function avatar() {
   const section = document.createElement("section");
   section.classList.add("picture");
-  section.innerHTML = `<img src="./ICONS/avatar.jpg" alt="dog">
+  section.innerHTML = `<img src="./ICONS/avatar.jpg" alt="avatar">
     <div></div>`;
   main.appendChild(section);
 }

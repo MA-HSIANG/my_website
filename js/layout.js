@@ -22,7 +22,8 @@ export function navBar() {
       text: "作品集",
     },
   ];
-  const hrefName = window.location.pathname.split("/")[1];
+  const hrefName = window.location.pathname.split("/")[2];
+
   for (const data of navData) {
     const li = document.createElement("li");
     const a = document.createElement("a");
