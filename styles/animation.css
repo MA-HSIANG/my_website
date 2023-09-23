@@ -1,0 +1,83 @@
+div.animation {
+  width: 100%;
+  height: 100vh;
+  background-color: #FF8B4A;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#z1 {
+  stroke-dasharray: 908px;
+  stroke-dashoffset: 908px;
+  animation: fade 0.6s ease-in forwards;
+}
+
+#z2 {
+  stroke-dasharray: 1179px;
+  stroke-dashoffset: 1179px;
+  animation: fade 0.6s ease-in forwards 0.3s;
+}
+
+#z3 {
+  stroke-dasharray: 1146px;
+  stroke-dashoffset: 1146px;
+  animation: fade 0.6s ease-in forwards;
+}
+
+#z4 {
+  stroke-dasharray: 940px;
+  stroke-dashoffset: 940px;
+  animation: fade 0.6s ease-in forwards 0.3s;
+}
+
+#z5 {
+  stroke-dasharray: 1177px;
+  stroke-dashoffset: 1177px;
+  animation: fade 0.6s ease-in forwards 0.6s;
+}
+
+#z6 {
+  stroke-dasharray: 1328px;
+  stroke-dashoffset: 1328px;
+  animation: fade 0.6s ease-in forwards 0.9s;
+}
+
+#z7 {
+  stroke-dasharray: 1043px;
+  stroke-dashoffset: 1043px;
+  animation: fade 0.6s ease-in forwards 1.1s;
+}
+
+#z8 {
+  stroke-dasharray: 1302px;
+  stroke-dashoffset: 1302px;
+  animation: fade 0.6s ease-in forwards 1.4s;
+}
+
+#z9 {
+  stroke-dasharray: 1245px;
+  stroke-dashoffset: 1245px;
+  animation: fade 0.6s ease-in forwards 1.7s;
+}
+
+svg {
+  animation: fill 1s ease-in forwards 1.7s;
+}
+
+@keyframes fade {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}/*# sourceMappingURL=animation.css.map */

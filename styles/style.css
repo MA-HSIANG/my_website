@@ -1,0 +1,241 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body {
+  position: relative;
+}
+
+.orange {
+  position: absolute;
+  top: -10vh;
+  right: 0;
+  z-index: -1;
+  width: 55vw;
+  height: 150vh;
+}
+
+.active {
+  color: #e08958;
+}
+
+header nav {
+  width: 100%;
+}
+header nav ul {
+  width: 70%;
+  padding: 2rem;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+header nav ul li {
+  font-size: 1.5rem;
+}
+header nav ul li a {
+  color: #475569;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  color: #e08958;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+main section.left {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  flex: 3 1 500px;
+  color: #475569;
+}
+main section.left h1 {
+  font-size: 3.5rem;
+  color: #e08958;
+}
+main section.left p {
+  font-size: 2rem;
+  padding: 1rem 0rem;
+}
+main section.right {
+  display: flex;
+  flex: 1 1 600px;
+  flex-direction: column;
+  position: relative;
+}
+main section.right div.content img {
+  border-radius: 50%;
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  top: 40vh;
+  left: -15vh;
+}
+main section.table {
+  flex: 3 1 500px;
+  margin: 2rem;
+}
+main section.table table {
+  border-collapse: collapse;
+  border-top: 3px solid #6b7280;
+}
+main section.table table tr td {
+  border-bottom: 3px solid #6b7280;
+  padding: 1.5rem 1rem;
+  color: #475569;
+}
+main section.table table tr:hover {
+  background-color: rgb(243, 200, 119);
+  transition: all 0.5s ease;
+}
+main section.project--list-container {
+  flex: 1 1 500px;
+}
+main section.project--list-container ul {
+  width: 80%;
+  margin: 0 auto;
+}
+main section.project--list-container ul li {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #475569;
+  border-radius: 6px;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+main section.project--list-container ul li:hover {
+  background-color: rgb(243, 200, 119);
+}
+main section.project--list-container ul li .projcet--cover-container {
+  width: 10rem;
+  height: 10rem;
+}
+main section.project--list-container ul li .projcet--cover-container img {
+  width: 100%;
+  min-height: 100%;
+}
+main section.project--list-container ul li .project--content {
+  width: 80%;
+  line-height: 2;
+}
+main section.project--list-container ul li .project--content h2 {
+  font-size: 1.56rem;
+  color: #475569;
+}
+main section.project--list-container ul li .project--content h2:hover {
+  color: #be7347;
+  cursor: pointer;
+}
+main section.project--list-container ul li .project--content p {
+  font-size: 1rem;
+  color: #6b7280;
+}
+main section.picture {
+  position: relative;
+  flex: 1 1 600px;
+}
+main section.picture img {
+  border-radius: 50%;
+  width: 20vw;
+  z-index: 10;
+}
+main section.picture::before {
+  content: "";
+  border-radius: 50%;
+  width: 20vw;
+  height: 20vw;
+  background-color: orange;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  z-index: -1;
+}
+main section.contact {
+  flex: 1 1 600px;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+}
+main section.contact div.content {
+  color: #475569;
+}
+main section.contact div.content h2 {
+  padding: 1.5rem;
+}
+main div.line {
+  background-color: #6b7280;
+  width: 3px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer a {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .orange {
+    opacity: 0.5;
+  }
+  header nav ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  header nav ul li {
+    padding: 1rem 0rem;
+    border-bottom: 1.5px solid #6b7280;
+  }
+  main .line {
+    display: none;
+  }
+  main section.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main section.right div.content img {
+    position: static;
+    width: 15rem;
+    height: 15rem;
+  }
+  main section.picture {
+    flex: none;
+  }
+  main section.picture img {
+    width: 50vw;
+  }
+  main section.project--list-container .project--content {
+    line-height: 1.5 !important;
+  }
+  main section.project--list-container .project--content h2 {
+    font-size: 1.5rem !important;
+  }
+  main section.project--list-container .project--content p {
+    font-size: 0.75rem !important;
+  }
+  main section.projcet--cover-container p {
+    flex-shrink: 0;
+  }
+  footer a {
+    width: 30vw;
+    height: 30vw;
+  }
+}/*# sourceMappingURL=style.css.map */
